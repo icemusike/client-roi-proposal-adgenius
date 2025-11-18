@@ -1,0 +1,5 @@
+{
+  "name": "Client ROI & Proposal Generator",
+  "description": "An application for agencies to create data-driven proposals for clients by calculating potential ROI based on business metrics and service fees. It generates a clean, shareable proposal to help turn prospects into customers.",
+  "requestFramePermissions": []
+}
