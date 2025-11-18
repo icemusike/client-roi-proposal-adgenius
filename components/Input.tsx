@@ -25,13 +25,13 @@ const Input: React.FC<InputProps> = ({
 }) => {
   return (
     <div className={`w-full ${className}`}>
-      <label htmlFor={name} className="block text-sm font-medium text-slate-700 mb-1">
+      <label htmlFor={name} className="block text-sm font-semibold text-slate-700 mb-2">
         {label}
       </label>
-      <div className="relative rounded-md shadow-sm">
+      <div className="relative rounded-lg shadow-sm">
         {prefix && (
-            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <span className="text-slate-500 sm:text-sm">{prefix}</span>
+            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5">
+                <span className="text-slate-400 sm:text-sm font-medium">{prefix}</span>
             </div>
         )}
         <input
@@ -41,11 +41,11 @@ const Input: React.FC<InputProps> = ({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className={`block w-full rounded-md border-slate-300 focus:border-orange-500 focus:ring-orange-500 sm:text-sm ${prefix ? 'pl-7' : 'pl-3'} ${suffix ? 'pr-7' : 'pr-3'}`}
+          className={`block w-full rounded-lg border-slate-200 bg-slate-50 focus:bg-white focus:border-orange-400 focus:ring-2 focus:ring-orange-200 sm:text-sm smooth-transition font-medium text-slate-700 ${prefix ? 'pl-8' : 'pl-3.5'} ${suffix ? 'pr-10' : 'pr-3.5'} py-2.5`}
         />
         {suffix && (
-             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-                <span className="text-slate-500 sm:text-sm">{suffix}</span>
+             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3.5">
+                <span className="text-slate-400 sm:text-sm font-medium">{suffix}</span>
             </div>
         )}
       </div>

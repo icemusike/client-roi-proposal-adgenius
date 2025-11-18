@@ -2,6 +2,7 @@
 export interface FormData {
   clientName: string;
   clientIndustry: string;
+  clientWebsite: string;
 
   averageSaleValue: string;
   currentMonthlyLeads: string;
@@ -20,6 +21,10 @@ export interface FormData {
 
   yourName: string;
   yourAgencyName: string;
+  yourEmail: string;
+  yourPhone: string;
+  yourWebsite: string;
+  agencyLogoUrl: string;
 }
 
 export interface CalculatedData {
